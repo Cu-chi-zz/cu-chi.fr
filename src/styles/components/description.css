@@ -1,0 +1,21 @@
+.description {
+    position: absolute;
+    width: 60vw;
+    height: fit-content;
+    background-color: var(--third-color);
+    top: 20vh;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 18px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (max-width: 580px) {
+    .description {
+        width: 60vw;
+        height: fit-content;
+        font-size: 14px;
+        background-color: var(--third-color);
+    }
+}

@@ -1,0 +1,18 @@
+.discord-name {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 2vh;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.discord-name > #username:active {
+    transition: 0.1s all ease-in-out;
+    transform: scale(0.8);
+}
+
+.copy-tooltip {
+    width: 100px;
+    text-align: center;
+}

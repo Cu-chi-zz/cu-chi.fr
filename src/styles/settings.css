@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --main-color: #202C59;
+    --secondary-color: #EEE5E9;
+    --third-color: #CF5C36; 
+}
+  
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: var(--secondary-color)
+}
+
+.less-opacity {
+    opacity: 0.6;
+}

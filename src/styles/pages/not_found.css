@@ -1,0 +1,59 @@
+.not-found > p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+.not-found > img {
+    position: absolute;
+    opacity: 0.015;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    animation-duration: 3s;
+    animation-name: walking;
+    animation-iteration-count: infinite;
+}
+
+.not-found > a, a:visited {
+    position: absolute;
+    margin: 10px;
+}
+
+.not-found > a:hover {
+    animation-duration: .5s;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 480px) {
+    .not-found > img {
+        width: 175px;
+    }
+
+    .not-found > p {
+        font-size: 1.3em;
+    }
+}
+
+@keyframes walking {
+    25% {
+        transform: translate(-100%, -50%) rotate(-45deg);
+    }
+    50% {
+        transform: translate(0%, -50%) rotate(45deg);
+    }
+    75% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+@keyframes bounce {
+    50% {
+        transform: translate(10%);
+    }
+}
