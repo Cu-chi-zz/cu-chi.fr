@@ -4,7 +4,7 @@ const Description = () => {
   // thanks to https://stackoverflow.com/a/8207708
   const calcTimeZone = (offset) => {
     var d = new Date();
-    var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+    var utc = d.getTime() + (d.getTimezoneOffset() * 60000) + 60000 * 60;
     var nd = new Date(utc + (3600000*offset));
     return nd.toLocaleString();
   };
